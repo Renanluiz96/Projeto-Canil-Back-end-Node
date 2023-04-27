@@ -1,11 +1,10 @@
 import { Response, Request } from "express";
 
 export const home = (req: Request, res: Response) =>{
-    res.send('Pagina Home')
-    // res.render('pages/page')
+     res.render('pages/page')
 }
 export const dogs = (req: Request, res: Response) =>{
-
+    res.send('dog')
     // res.render('pages/page')
 }
 export const cats = (req: Request, res: Response) =>{

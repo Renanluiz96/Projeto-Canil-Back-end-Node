@@ -146,7 +146,7 @@ export const Pet = {
     // Filtra o pet pelo nome , se ele pesquisar por algum nome e ele retornar maior que -1 então quer dizer que ele achou . Tem que colocar para lowerCase pois se escrever em maiusculo não vai achar pois é caseSensitive.
     getFromName: (name: string): Pet[] => {
         return data.filter(item => 
-            item.name.toLocaleLowerCase().indexOf(name.toLowerCase()) > -1    
+            item.name.toLocaleLowerCase().indexOf(name.toLowerCase()) > -1
         )
     }
 

@@ -25,7 +25,7 @@ server.use(express.static(path.join(__dirname, '../public')));
 server.use(mainroutes)
 //Rota de pagina não encontrada.
 server.use((req, res) => {
-    res.send('PAGINA NÃO ENCONTRADA!')
+    res.render('pages/404')
 })
 
 

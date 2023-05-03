@@ -7,7 +7,7 @@ export const search = (req: Request, res: Response) => {
     //Pegando o resultado da busca la no url e salvando na variavel query
     let query: string = req.query.q as string;
     
-    // Se não tiver query fazer uma verificação caso não tiver redirecionar a pagina para a pagina principal
+    // Se não tiver query(ou seja se o usuario não digitar nada e apertar enter.) fazer uma verificação caso não tiver redirecionar a pagina para a pagina principal
     if(!query) {
         res.redirect('/');
         return;
